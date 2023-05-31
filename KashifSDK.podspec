@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = 'KashifSDK'
-  spec.version      = '1.0.0'
+  spec.version      = '1.0.1'
   spec.summary      = 'This is MSS PAYMENT SDK'
   spec.description  = 'This can be used by MSSP client who want to conusme its services.'
 
