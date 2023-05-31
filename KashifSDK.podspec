@@ -23,6 +23,10 @@ Pod::Spec.new do |spec|
   
   spec.source       = { :http => 'https://sdk-bucket-nep.s3.ap-south-1.amazonaws.com/testsdk/KashifSDK.zip' }
   
+  #spec.source_files  = 'Classes/**/*'
+  #spec.resource_bundles = {
+   #   'KashifSDK' => ['KashifSDK/Resources/Storyboard.storyboard', 'KashifSDK/Resources/info.plist']
+  #}
   spec.ios.deployment_target = '12.2'
   spec.swift_version = '4.0'
   spec.ios.vendored_frameworks = 'KashifSDK.framework'
@@ -34,6 +38,8 @@ Pod::Spec.new do |spec|
   # spec.resources = "Resources/*.png"
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+    spec.dependency 'TTGSnackbar'
+    
     
 end
 
